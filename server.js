@@ -8,7 +8,6 @@ const io = new Server(server);
 const PORT = 8000;
 
   io.on("connection", (socket) => {
-    console.log(socket);
     console.log(`A user connected: ${socket.id}`);
 
     socket.on("locationUpdate", (data) => {
